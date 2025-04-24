@@ -1,1 +1,40 @@
-/*  your css code here. If applicable */
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6e072d;
+  color: white;
+  font-size: 18px;
+  width: 100%;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  padding: 18px 27px; /* 18px font-size * 1.5 = 27px horizontal */
+  border-left: 2px solid white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navbar li:hover {
+  background-color: #b90e4d;
+}
+
+.nav-left li:first-child {
+  border-left: none;
+}
+
+.nav-right li:first-child {
+  border-left: none; /* No border on left side of "Team" */
+}
